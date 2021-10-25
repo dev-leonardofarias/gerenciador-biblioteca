@@ -1,0 +1,95 @@
+.box-book{
+    display: flex;
+    width: 40%;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    border-radius: 10px;
+    height: 60vh;
+}
+.addLivro{
+    height: 40vh;
+}
+.title-box{
+    display: flex;
+    align-items: center;
+    
+    font-weight: 600;
+    font-size: 1.4rem;
+    color: #0074ff;
+}
+
+.inputbox{
+    width: 100%;
+    text-align: center;
+    padding: 5px;
+}
+.principal{
+    align-items: center;
+    width: 100%;
+    height: 85vh;
+}
+.subPrincipal{
+    height: 500px;
+}
+.buttons{
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+.btn-enviar{
+    width: 90%;
+}
+
+@media (max-width: 1024px) {
+    .main{
+        height: 100vh;
+    }
+
+    .box-book {
+        min-width: 40vw;
+        min-height: 60vh;    
+    }
+
+    .inputuser {
+        margin: 10px;
+        font-size: 2rem;
+    }
+    
+    .title-box {
+        font-size: 1.6rem;
+    }
+}
+
+@media (max-width: 800px) {
+    .inputuser {
+        margin: 15px;
+    }
+
+    .box-book {
+        min-width: 40vw;
+        min-height: 60vh;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 395px) {
+    nav {
+        display: none;
+    }
+    
+    .box-book {
+        min-width: 50vw;
+        min-height: 60vh;
+        justify-content: center;
+    }
+    
+    .inputuser {
+        margin: 10px;
+    }
+
+    .title-box {
+        font-size: 1rem;
+        font-weight: 300;
+    }
+}

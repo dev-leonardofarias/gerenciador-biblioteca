@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/css/aluno.css">
+    <link rel="stylesheet" href="src/css/book.css">
+    <title>Painel de Alunos</title>
+</head>
+<body>
+    <nav class="nav">
+        <div class="icons">
+            <div class="logo">
+            </div>
+            <div class="icons-top">
+                <ul>
+                    <li>
+                        <a href="index.html">
+                            <img src="src/img/icons8-casa-50 (2).png" alt="" class="moldura top">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="src/pages/addAluno.html">
+                            <img src="src/img/icons8-adicionar-usuário-masculino-50 (1).png" alt="" class="moldura top">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="src/pages/addLivro.html">
+                            <img src="src/img/icons8-adicionar-livro-50 (1).png" alt="" class="moldura top">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="src/pages/alunos-livro.html">
+                            <img src="src/img/icons8-livro-aberto-50 (2).png" alt="" class="moldura top">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="src/pages/livros.html">
+                            <img src="/src/img/icons8-livros-50.png" alt="" class="moldura top">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="src/pages/alunos.html">
+                            <img src="src/img/icons8-grupo-de-usuário-homem-homem-50 (1).png" alt="" class="moldura top">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <!-- <div class="icons-bottom">
+                <ul>
+                    <li><a href=""><img src="/src/img/icons8-casa-50 (2).png" alt="" class="moldura"></a></li>
+                </ul>
+            </div>   -->
+        </div>  
+    </nav>
+    <main class="main">
+        
+       <div class="principal">
+            <section class="box-book">
+                <div class="inputbox alunoInput">
+                    <label for="name" class="labelInput">Nome:</label>
+                    <input type="text" id="nomeAluno" class="inputuser" placeholder="Nome do aluno">
+                </div>
+                <div class="inputbox telInput">
+                    <label for="tel" class="labelInput">Telefone:</label>
+                    <input type="tel" id="telefoneAluno" data-js="phone" class="inputuser" placeholder="Telefone do aluno">
+                </div>
+                <div class="inputbox turmaInput">
+                    <label for="tel" class="labelInput">Turma:</label>
+                    <input type="text" id="turmaAluno" class="inputuser" placeholder="Turma do aluno">
+                </div>
+                <div class="inputbox livroInput">
+                    <label for="name" class="labelInput">Livro:</label>
+                    <input type="text" id="livroAluno" class="inputuser" placeholder="Nome do livro">
+                </div>
+                <div class="inputbox dataInput">
+                    <label for="name" class="labelInput">Devolução:</label>
+                    <input type="date" id="devolucaoAluno" class="inputuser date-aluno" placeholder="Data de devolução">
+                </div>
+                <div class="buttons">
+                    <button id="enviar" class="btn-enviar" onclick="salvar()">Adicionar</button>
+                </div>
+            </section>
+        </div>
+        <div class="subPrincipal">
+            <section class="tabela">
+                <div class="content">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>Nome</th>
+                                <th>Telefone</th>
+                                <th>Turma</th>
+                                <th>Livro</th>
+                                <th>Devolução</th>
+                                <th>Situação</th>
+                                <th>Ações</th>
+                            </tr>
+                        </thead>
+                        <tbody id="tbody">
+                        
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+        </div>
+    </main>
+    <script src="src/js/aluno-livro.js"></script>
+    <script src="src/js/alunos.js"></script>
+    <script src="src/js/masks.js"></script>
+</body>
+</html>
